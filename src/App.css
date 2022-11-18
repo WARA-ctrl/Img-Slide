@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&family=Gemunu+Libre&family=Signika+Negative:wght@300&display=swap");
+* {
+  font-family: "Arimo", sans-serif;
+  font-family: "Gemunu Libre", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+  letter-spacing: 5px;
+  background: black;
+}
+.image {
+  width: 60%;
+  height: 40%;
+  /* min-width: 250px; */
+  border-radius: 10px;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: aliceblue;
+  font-size: 200%;
+  z-index: 10;
+  cursor: pointer;
+}
+.rightArrow {
+  position: absolute;
+  top: 35%;
+  color: aliceblue;
+  right: 5%;
+  font-size: 200%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slide {
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1.08);
+  transition-duration: 1s;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.582);
+  text-align: center;
+  /* opacity: 0.5; */
+  font-size: 1.5rem;
+  color: aliceblue;
+
+  font-weight: 700;
+}
+
+svg {
+  color: aliceblue;
+}
